@@ -57,3 +57,15 @@
 //     spaces = spaces.len(); //显然，Rust 对类型的要求很严格，不允许将整数类型 usize 赋值给字符串类型。
 //                            // usize 是一种 CPU 相关的整数类型，在数值类型中有详细介绍。
 // }
+
+
+fn add_with_extra(x: i32, y: i32) -> i32 {
+    let x = x + 1; // 语句
+    let y = y + 5; // 语句
+    x + y // 表达式
+}
+
+fn main() {
+    let a: i32  = add_with_extra(12, 24);
+    println!("the value of a is: {}", a);
+}
